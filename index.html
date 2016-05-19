@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bundle.js"></script>
+  </head>
+
+  <body>
+    <section ui-view></section>
+     <a ui-sref="state1">State 1</a>
+     <a ui-sref="state2">State 2</a>
+     <a ui-sref="state3">State 3</a>
+     <div ui-view="substate31"></div>
+     <div ui-view="substate32"></div>
+  </body>
+</html>
